@@ -1,0 +1,28 @@
+
+<div class="container">
+  <div class="card">
+    <img src="https://media.istockphoto.com/photos/shopping-basket-with-variety-of-grocery-products-picture-id1179750938?k=20&m=1179750938&s=612x612&w=0&h=f27ojuYLfCkRY3LSFytUJ-KKJjiWJv2RmKwAm3LIXyk=" alt="Person" class="card__image">
+    <p class="card__name">
+
+    <div class="grid-container">
+      <div *ngFor=" let i of cartdataService.sharedData">
+
+        <h3>{{i.Name}}</h3>
+        <h3>${{i.Price}}</h3>
+        <h3>-------</h3>
+    </div>
+
+
+
+
+    </div>
+
+    <div class="Total">
+      <h3> Total : $ {{cartdataService.Total}}</h3>
+      </div>
+    <button class="btn draw-border">PAY</button>
+
+  </div>
+
+
+

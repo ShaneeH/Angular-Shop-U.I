@@ -1,0 +1,18 @@
+<h2> Store Component</h2>
+
+<div *ngFor=" let i of products">
+<div class="card" >
+  <img src={{i.img}} alt='image'>
+  <h1>{{i.Name}}</h1>
+  <p class="price">${{i.Price}}</p>
+  <p> In Stock : {{i.Available}}</p>
+  <p><button (click)="addToCart(i)"> Add to Cart</button></p>
+
+</div>
+</div>
+
+
+
+
+
+
